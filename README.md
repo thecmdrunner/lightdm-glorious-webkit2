@@ -103,7 +103,7 @@ Edit `/etc/lightdm/lightdm-webkit2-greeter.conf` using any text editor.
   
   ```bash
   ...
-  debug_mode          = false
+  debug_mode          = true
   ...
   ```
   
