@@ -57,7 +57,7 @@ See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need m
 
 2. Install the theme
 
-  + Clone the repository and put it into the themes directory
+   Clone the repository and put it into the themes directory
 
   ```bash
   git clone --recursive https://github.com/thegamerhat/lightdm-glorious-webkit2
@@ -68,7 +68,7 @@ See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need m
 
   Edit the file `/etc/lightdm/lightdm.conf`. If it doesn't exist already, then copy the contents from my [lightdm.conf](assets/lightdm.conf) file and head directly to Step 4.
 
-	# Find `greeter-session` under the `[SeatDefaults]` OR `[Seat:*]` section, uncomment it (remove the `#`), then set its value to `lightdm-webkit2-greeter`.
+	Find `greeter-session` under the `[SeatDefaults]` OR `[Seat:*]` section, uncomment it (remove the `#`), then set its value to `lightdm-webkit2-greeter`.
 
   ```bash
   ...
@@ -88,11 +88,23 @@ Edit `/etc/lightdm/lightdm-webkit2-greeter.conf` using any text editor.
 
 	+ Find `webkit_theme` then set its value to `glorious`.
 
+  ```bash
+  ...
+  webkit_theme        = Glorious
+  ...
+  ```
+
   > If you are greeted with an error, only then follow the below tweak.
 
   + Boot into the system somehow, or use a live USB and edit the file `/etc/lightdm/lightdm-webkit2-greeter.conf`.
 
 	+ Find `debug_mode` then set it to true, and then **reboot**.
+  
+  ```bash
+  ...
+  debug_mode          = false
+  ...
+  ```
   
   + When LightDM loads up, you can right-click and click `reload` the greeter just like a webpage.
 
