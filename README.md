@@ -43,8 +43,8 @@ Please make sure you have a recent version of these.
   For Debian/Ubuntu, download from [OpenSUSE Repo](https://software.opensuse.org/download.html?project=home:antergos&package=lightdm-webkit2-greeter)
   
   ```bash
-  sudo dnf install lightdm -y
-  sudo pacman -S lightdm --noconfirm
+  sudo dnf copr enable antergos/lightdm-webkit2-greeter
+  sudo pacman -S lightdm-webkit2-greeter --noconfirm
   ```
 
   + Enable `lightdm.service` 
@@ -76,6 +76,8 @@ See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) for more info
   ...
   ```
 
+  **Check my [lightdm.conf](assets/lightdm.conf) for reference.**
+
 4. Set the theme
 
 Edit `/etc/lightdm/lightdm-webkit2-greeter.conf` using any text editor.
@@ -93,6 +95,8 @@ Edit `/etc/lightdm/lightdm-webkit2-greeter.conf` using any text editor.
 	+ Find `debug_mode` then set it to true, and then **reboot**.
   
   + When LightDM loads up, you can right-click and click `reload` the greeter just like a webpage.
+
+  **Check my [lightdm-webkit2-greeter.conf](assets/lightdm-webkit2-greeter.conf) for reference.**
 
 ### Uninstall
 
