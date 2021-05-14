@@ -81,31 +81,31 @@ See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need m
 
 ## 4. Set the theme
 
-Edit `/etc/lightdm/lightdm-webkit2-greeter.conf` using any text editor.
+    Edit `/etc/lightdm/lightdm-webkit2-greeter.conf` using any text editor.
 
-	```bash
-	sudo nano /etc/lightdm/lightdm-webkit2-greeter.conf
-	```
+    ```bash
+    sudo nano /etc/lightdm/lightdm-webkit2-greeter.conf
+    ```
 
-	+ Find `webkit_theme` then set its value to `glorious`.
+    + Find `webkit_theme` then set its value to `glorious`.
 
-  ```bash
-  ...
-  webkit_theme        = Glorious
-  ...
-  ```
+    ```bash
+    ...
+    webkit_theme = Glorious
+    ...
+    ```
 
   > If you are greeted with an error, only then follow the below tweak.
 
   + Boot into the system somehow, or use a live USB and edit the file `/etc/lightdm/lightdm-webkit2-greeter.conf`.
 
-	+ Find `debug_mode` then set it to true, and then **reboot**.
+    + Find `debug_mode` then set it to true, and then **reboot**.
   
-  ```bash
-  ...
-  debug_mode          = true
-  ...
-  ```
+    ```bash
+    ...
+    debug_mode = true
+    ...
+    ```
   
   + When LightDM loads up, you can right-click and click `reload` the greeter just like a webpage.
 
