@@ -13,7 +13,7 @@ This theme works with Mouse, Trackpads, Keyboard, and Touchscreen devices too.
 + Swipe gestures
 + Vanilla Javascript!
 
-## See the [Live Demo](https://thegamerhat.github.io/lightdm-glorious/)
+## See the [Live Demo](https://thegamerhat.github.io/lightdm-glorious-webkit2/)
 
 ### Demo password: `toor`
 
