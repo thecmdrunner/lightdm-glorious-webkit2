@@ -26,7 +26,7 @@ Please make sure you have a recent version of these.
 + lightdm
 + lightdm-webkit2-greeter -> https://github.com/Antergos/web-greeter
 
-## Installation
+# Installation
 
 ## 1. LightDM  
 
