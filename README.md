@@ -67,9 +67,13 @@ See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need m
 
 ## 3. Set `greeter-session` to webkit2.
 
-  Edit the file `/etc/lightdm/lightdm.conf`. If it doesn't exist already, then copy the contents from my [lightdm.conf](assets/lightdm.conf) file and head directly to Step 4.
+  + Edit the file `/etc/lightdm/lightdm.conf`. 
 
-  Find `greeter-session` under the `[SeatDefaults]` OR `[Seat:*]` section, uncomment it (remove the `#`), then set its value to `lightdm-webkit2-greeter`.
+  If it doesn't exist already, then copy the contents from my [lightdm.conf](assets/lightdm.conf) file and head directly to Step 4.
+
+  + Find `greeter-session` under the `[SeatDefaults]` OR `[Seat:*]` section and uncomment the line (remove the `#`).
+
+  + Set its value to `lightdm-webkit2-greeter`
 
   ```bash
   greeter-session=lightdm-webkit2-greeter
