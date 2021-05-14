@@ -1,8 +1,9 @@
 # Lightdm Glorious Theme
 
 A Sleek and Modern theme for the Lightdm display manager using `webkit2-greeter`, made using Vanilla JS and HTML.
-
 This theme works with Mouse, Trackpads, Keyboard, and Touchscreen devices too.
+
+This repository is a fork of https://github.com/manilarome/lightdm-webkit2-theme-glorious
 
 ### Features
 
