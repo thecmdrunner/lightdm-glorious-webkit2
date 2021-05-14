@@ -26,7 +26,7 @@ Please make sure you have a recent version of these.
 + lightdm
 + lightdm-webkit2-greeter -> https://github.com/Antergos/web-greeter
 
-### Installation
+## Installation
 
 1. LightDM  
 
@@ -53,7 +53,7 @@ Please make sure you have a recent version of these.
   sudo systemd enable --now lightdm
   ```
 
-See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) for more info.
+See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need more info.
 
 2. Install the theme
 
@@ -98,21 +98,18 @@ Edit `/etc/lightdm/lightdm-webkit2-greeter.conf` using any text editor.
 
   **Check my [lightdm-webkit2-greeter.conf](assets/lightdm-webkit2-greeter.conf) for reference.**
 
-### Uninstall
+## Uninstall
 
 1. Follow the [Installation Section](#installation) in reverse order.
 
+### Customization and Settings
 
-### Swipe gestures
++ Color customization supports `#RGB`, `#RRGGBB`, and `#RRGGBBAA`.
++ Blur strength settings only allows an integer with `px` suffix.
++ Animation speed supports `s` and `ms`.
++ Background image selection. Supports randomness.
 
-Why do we have this? Linux can be installed on almost anything. Yes, even on a potato. So it exists to save myself some time if someone (including myself) decided to use this theme on a touch screen device (like touch screen potato? Who knows).
-
-+ Swiping up on the greeter screen will close it.
-+ Swiping down on the login screen will open the greeter screen.
-+ Swiping left will open the dashboard.
-+ Swiping right will close the dashboard.
-
-### Keybinds
+## Keybinds
 
 The default modifier is <kbd>Alt</kbd>. You can change it in the settings.
 
@@ -122,23 +119,23 @@ The default modifier is <kbd>Alt</kbd>. You can change it in the settings.
 + <kbd>Modifier + y</kbd> opens the account selection.
 + <kbd>Escape</kbd> to close or go back.
 
-### Customization and Settings
-
-+ Color customization supports `#RGB`, `#RRGGBB`, and `#RRGGBBAA`.
-+ Blur strength settings only allows an integer with `px` suffix.
-+ Animation speed supports `s` and `ms`.
-+ Background image selection. Supports randomness.
-
-### Changing clock mode
+## Changing clock mode
 
 There are two clock modes available - `24-hour` and `12-hour`. Switch between clock modes by just clicking on the clock. Simple.
+
+### Swipe gestures - On touch enabled screens
+
++ Swiping up on the greeter screen will close it.
++ Swiping down on the login screen will open the greeter screen.
++ Swiping left will open the dashboard.
++ Swiping right will close the dashboard.
 
 ### Notes
 
 + Add more background images by putting your wallpapers/images in `/usr/share/backgrounds/`.
 + Non-image and directory inside `/usr/share/backgrounds/` will cause an error! You will likely encounter this if you installed a package (for example `archlinux-wallpaper` that includes `AUTHORS` file).
 + Set your profile image in system settings or by using `mugshot`.
-+ Missing DE/WM logo? Submit a [pull request](https://github.com/manilarome/lightdm-webkit2-theme-glorious/pulls)!
++ Missing DE/WM logo? Submit a [pull request](https://github.com/thegamerhat/lightdm-glorious-webkit2/pulls)!
 + Translations are not yet supported. PR's are welcome!
 
 ## Credits
