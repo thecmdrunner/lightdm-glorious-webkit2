@@ -88,7 +88,7 @@ See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need m
   - Find `webkit_theme` then set its value to `glorious`.
 
   ```bash
-  webkit_theme = Glorious
+  webkit_theme = glorious
   ```
 
   > If you are greeted with an error, only then follow the below tweak.
