@@ -28,7 +28,7 @@ Please make sure you have a recent version of these.
 
 ## Installation
 
-1. LightDM  
+## 1. LightDM  
 
   + Install `lightdm` package
 
@@ -55,7 +55,7 @@ Please make sure you have a recent version of these.
 
 See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need more info.
 
-2. Install the theme
+## 2. Install the theme
 
    Clone the repository and put it into the themes directory
 
@@ -64,7 +64,7 @@ See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need m
   sudo cp -r lightdm-glorious-webkit2 /usr/share/lightdm-webkit/themes/glorious
   ```
 
-3. Set `greeter-session` to webkit2.
+## 3. Set `greeter-session` to webkit2.
 
   Edit the file `/etc/lightdm/lightdm.conf`. If it doesn't exist already, then copy the contents from my [lightdm.conf](assets/lightdm.conf) file and head directly to Step 4.
 
@@ -78,7 +78,7 @@ See [Archwiki Guide](https://wiki.archlinux.org/index.php/LightDM) if you need m
 
   **Check my [lightdm.conf](assets/lightdm.conf) for reference.**
 
-4. Set the theme
+## 4. Set the theme
 
 Edit `/etc/lightdm/lightdm-webkit2-greeter.conf` using any text editor.
 
